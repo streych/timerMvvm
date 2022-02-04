@@ -8,8 +8,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 
-class SWViewModel(
+internal class SWViewModel(
 ) : ViewModel() {
+
 
     private val timestampProvider = object : TimestampProvider {
         override fun getMilliseconds(): Long {
